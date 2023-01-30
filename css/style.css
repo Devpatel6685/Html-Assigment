@@ -128,7 +128,7 @@ span {
         padding: 0;
     }
     .container {
-        flex-direction: column;
+        flex-direction: row-reverse;
         margin-top: 2rem;
     }
     .left {

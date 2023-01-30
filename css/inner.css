@@ -135,3 +135,147 @@ body {
     background-color: #FFFFFF;
     width: 100%;
 }
+
+.thirdcol {
+    margin-top: 10px;
+}
+
+.col-xl-4 {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.floating-label {
+    font-size: 13px;
+    color: #cccccc;
+    position: absolute;
+    pointer-events: none;
+    top: 9px;
+    left: 25px;
+    transition: all 0.3s ease;
+}
+
+input:focus~.floating-label,
+input:not(:focus):valid~.floating-label {
+    top: -9px;
+    bottom: 50px;
+    left: 25px;
+    background: white;
+    font-size: 11px;
+    opacity: 1;
+    color: #404040;
+}
+
+.othercol {
+    margin: 25px 0 20px 0 !important;
+}
+
+.button-border {
+    border-radius: 50px;
+    color: #C8242F;
+    background: none;
+    border-color: #C8242F;
+    width: 20%;
+    align-items: center;
+    margin-top: 10px;
+    padding: 7px;
+}
+
+.Upload-button {
+    border: #C8242F 2px solid;
+    background: none;
+    border-radius: 15px;
+    color: #C8242F;
+    width: 10%;
+    margin: 5px;
+}
+
+.radio {
+    margin-top: 15px;
+}
+
+.form-check-inline {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.form-check-input {
+    accent-color: #C8242F;
+}
+
+#error-msg {
+    width: 20px;
+    margin-right: 1%;
+    /* padding: 10px; */
+}
+
+#warning-msg {
+    width: 20px;
+    margin-right: 1%;
+}
+
+#success-msg {
+    width: 20px;
+    margin-right: 1%;
+}
+
+#info-msg {
+    width: 20px;
+    margin-right: 1%;
+    /* padding: 10px; */
+}
+
+.error {
+    color: #C8242F;
+    border-color: #C8242F;
+}
+
+.warning {
+    color: #FFA800;
+    border-color: #FFA800 !important;
+}
+
+.success {
+    color: #00AF27;
+}
+
+.info {
+    color: #00B9E1;
+}
+
+.alert {
+    margin: 0 10px;
+    border: solid 1px !important;
+    border-radius: 5px !important;
+}
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    border-bottom: 2px solid #c8242f;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+}
