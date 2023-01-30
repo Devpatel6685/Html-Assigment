@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inner.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <img src="/images/menu-bar.svg" alt="">
+            <img src="/images/header-logo.svg" alt="" class="header-logo">
+        </div>
+
+        <div class="searchbar">
+            <img src="/images/search-icon.svg" alt="">
+            <input type="text" name="search" id="search-bar" placeholder="Search">
+        </div>
+
+        <div class="profile">
+            <img src="/images/notification-icon.svg" alt="">
+            <div class="user">
+                <img src="/images/profile.png" alt="" class="profile-photo  ">
+                <p>Jhon Doe</p>
+                <img src="/images/select-downward.svg" alt="" class="downarrow">
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-content">
+
+        <div class="sidebar">
+
+            <div class="dashboard">
+                <img src="/images/dashboard-default.svg" alt="" class="icons">
+                <p>Dashboard</p>
+            </div>
+
+            <div class="dashboard" style="background-color: #FFF3F4;">
+                <img src="/images/graph-active.svg" alt="" class="icons">
+                <p style="color: #C8242F;">Analysis</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/inbox-default.svg" alt="" class="icons">
+                <p>Inbox</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/clock-default.svg" alt="" class="icons">
+                <p>History</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/user-default.svg" alt="" class="icons">
+                <p>User</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/maintenance-default.svg" alt="" class="icons">
+                <p>Maintainance</p>
+            </div>
+
+            <div class="dashboard">
+                <img src="/images/setting-default.svg" alt="" class="icons">
+                <p>Setting</p>
+            </div>
+        </div>
+
+        <div class="analysis-title">
+
+            <h1>Analysis</h1>
+
+            <div class="container">
+
+                <div class="onecol">
+                    <h3>One Column</h3>
+                </div>
+
+                <div class="row py-3">
+
+                    <div class="col-xl-12 py-2 rounded">
+                        <input type="text" name="Name" id="name" placeholder="Name" class="form-control">
+                    </div>
+
+                    <div class="col-xl-12 py-1">
+
+                        <select name="" id="dropdown" class="form-control">
+                            <option value="defaultvalue" selected disabled hidden>Choose Option</option>
+                            <option value="">first option</option>
+                            <option value="">second option</option>
+                            <option value="">third option</option>
+                            <option value="">fourth option</option>
+                        </select>
+
+                    </div>
+
+                    <div class="col-xl-12 py-1">
+                        <textarea name="" id="textarea" rows="5" placeholder="Multiple line" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="twocol">
+                    <h3>Two Column</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="col-xl-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
