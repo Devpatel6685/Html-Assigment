@@ -22,7 +22,7 @@ body {
     border-radius: 50%;
     box-shadow: 0px 4px 31px #0000000A;
     border: 20px solid #FFFFFF;
-    margin-left: 60px;
+    margin-left: calc(50% - 250px);
 }
 
 .right {
@@ -128,8 +128,8 @@ span {
         padding: 0;
     }
     .container {
-        flex-direction: row-reverse;
-        margin-top: 2rem;
+        flex-direction: column;
+        padding-top: 2rem;
     }
     .left {
         width: 80%;
@@ -137,7 +137,7 @@ span {
     .left img {
         align-items: center;
         width: 70%;
-        margin-right: 3rem;
+        margin-left: 15%;
     }
     .right {
         width: 100%;
@@ -164,9 +164,11 @@ span {
         display: flex;
         flex-direction: column;
         /* width:100rem; */
+        width: 80%;
+        margin: auto;
     }
     .form input {
-        width: 80%;
+        width: 94%;
         margin-left: 1vh;
     }
     .login-button {
@@ -174,12 +176,25 @@ span {
     }
     .forget {
         width: 80%;
-        text-align: center;
     }
     .forget a {
         width: 200%;
     }
     .member {
         text-align: center;
+    }
+}
+
+@media (max-width:420px) {
+    .forget {
+        width: 80%;
+    }
+    .login-button {
+        margin-right: 0%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        align-items: center;
+        margin-top: 15px;
     }
 }

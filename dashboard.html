@@ -16,7 +16,7 @@
 <body>
     <div class="navbar">
         <div class="dropdown">
-            <img src="/images/menu-bar.svg" alt="">
+            <img src="/images/menu-bar.svg" alt="" class="menu-bar" style="cursor: pointer;" onclick="openNav()">
             <img src="/images/header-logo.svg" alt="" class="header-logo">
         </div>
 
@@ -26,7 +26,7 @@
         </div>
 
         <div class="profile">
-            <img src="/images/notification-icon.svg" alt="">
+            <img src="/images/notification-icon.svg" alt="" class="notification-bell">
             <div class="user">
                 <img src="/images/profile.png" alt="" class="profile-photo  ">
                 <p>Jhon Doe</p>
@@ -37,7 +37,14 @@
 
     <div class="bottom-content">
 
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar" style="overflow: hidden; width:15%;">
+
+            <a href="javascript:void(0)" style="margin-left:80%;" class="closebtn" onclick="closeNav()">×</a>
+
+            <div class="dashboard-search">
+                <img src="/images/search-icon.svg" alt="">
+                <input type="text" name="search" id="search-bar" placeholder="Search" autocomplete="off" style="width:80%; border: none;">
+            </div>
 
             <div class="dashboard" style="background-color: #FFF3F4;">
                 <img src="/images/dashboard-active.svg" alt="" class="icons">
@@ -81,7 +88,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-auto">
+                    <div class="col-auto multiple">
                         <img src="/images/new-product.svg" alt="">
                         <div class="details">
                             <h3>23,456</h3>
@@ -89,7 +96,7 @@
                         </div>
                     </div>
 
-                    <div class="col-auto">
+                    <div class="col-auto multiple">
                         <img src="/images/star.svg" alt="">
                         <div class="details">
                             <h3>2345</h3>
@@ -97,7 +104,7 @@
                         </div>
                     </div>
 
-                    <div class="col-auto">
+                    <div class="col-auto multiple">
                         <img src="/images/total-product.svg" alt="">
                         <div class="details">
                             <h3>32,456</h3>
@@ -105,7 +112,7 @@
                         </div>
                     </div>
 
-                    <div class="col-auto">
+                    <div class="col-auto multiple">
                         <img src="/images/dollar-filled.svg" alt="">
                         <div class="details">
                             <h3>5678</h3>
@@ -113,7 +120,7 @@
                         </div>
                     </div>
 
-                    <div class="col-auto">
+                    <div class="col-auto multiple">
                         <img src="/images/money-bag.svg" alt="">
                         <div class="details">
                             <h3>33,5342</h3>
@@ -129,7 +136,7 @@
 
                 <div class="graph1">
                     <div class="graph-head">
-                        <p style="font-size:medium;">Sales</p>
+                        <p>Sales</p>
 
                         <div class="time">
                             <p>weekly</p>
@@ -159,6 +166,8 @@
                                 <p>Russia</p>
                             </div>
                         </div>
+
+
                         <div class="down">
                             <div class="desc">
                                 <div class="circle" style="background-color:#A2B86C;"></div>
@@ -282,6 +291,18 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("sidebar").style.width = "242px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+
+        }
+    </script>
 </body>
 
 </html>
