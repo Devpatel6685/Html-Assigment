@@ -190,11 +190,13 @@ span {
         width: 80%;
     }
     .login-button {
-        margin-right: 0%;
+        margin-right: 0% !important;
         justify-content: space-between;
         display: flex;
         align-items: center;
         align-items: center;
         margin-top: 15px;
+        flex-wrap: wrap;
+        margin-left: 8rem;
     }
 }
